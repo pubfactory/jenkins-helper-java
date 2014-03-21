@@ -5,6 +5,7 @@ Classes that help tests interact with Jenkins
 
 
 TODO:
+ * more maveny file convention
  * need some tests (and examples)
   * test dependency on the project it targets?
   * usage examples

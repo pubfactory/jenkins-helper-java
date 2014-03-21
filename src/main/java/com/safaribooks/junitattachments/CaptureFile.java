@@ -1,6 +1,3 @@
-/**
- * @author markl
- */
 package com.safaribooks.junitattachments;
 
 import java.lang.annotation.ElementType;
@@ -16,19 +13,20 @@ import java.lang.annotation.Target;
  * 
  * will default to <method or field name>.txt
  * 
+ * if the value to be recorded is null, nothing will be recorded
  */
 @Target({ ElementType.METHOD, ElementType.FIELD })
 //TODO: have this work Only with public members
 //TODO: having this work on local variable would be awesome, mabe in java 8 :-(
 @Retention(RetentionPolicy.RUNTIME)
-public @interface CaptureFile {//TODO: capture String, just record a bunch of string paramiters
+public @interface CaptureFile {
 
     /**
-     * the file extention. will defualt to txt
+     * the file extension. will default to txt
      * 
      * @return
      */
-    String extention() default "txt";
+    String extension() default "txt";
 
     /**
      * the name of the file to be stored (without file extension), will default to the method or field name

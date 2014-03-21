@@ -5,7 +5,7 @@ import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
 
-public class RecordArtifact {
+public class RecordAttachment {
 
 	public static void record(File path,byte[] value){
 		try {
