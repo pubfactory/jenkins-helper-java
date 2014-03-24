@@ -16,15 +16,16 @@ public class UsageExample {
 
 	// First include the recordArtifactRule in your junit test.
 	@Rule
-	public RecordAttachmentRule recordArtifactRule = new RecordAttachmentRule(this);
+	public RecordAttachmentRule recordArtifactRule = new RecordAttachmentRule(
+			this);
 
 	// create anything you would need for your tests, in this case an
 	// authentication system
 	Sam sam = new Sam();
 
 	// you can record artifacts by using the @CaptureFile annotation on either
-	// public fields, or public methods public methods will be called after the
-	// test has failed.
+	// public fields, or public methods. On test failure, the annotated methods
+	// will be called and artifacts will be recorded to the file system
 
 	// by default the the string will be saved to <method or field name>.txt,
 	// but this can be changed with the name and extension parameter
@@ -48,8 +49,8 @@ public class UsageExample {
 
 	@Test
 	public void passingGreenEggsAndHamTest() {
-		authentication = "You do not like them.\n" + "So you say.\n"
-				+ "Try them! Try them!\n" + "And you may.\n"
+		authentication = "You do not like them.\nSo you say.\n"
+				+ "Try them! Try them!\nAnd you may.\n"
 				+ "Try them and you may I say.\n";
 
 		assertTrue("all is well", sam.accept(authentication));
