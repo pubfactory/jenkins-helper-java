@@ -3,7 +3,7 @@
   <groupId>com.safaribooks</groupId>
   <artifactId>jenkins-helper-java</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
 
   <name>Maven core</name>
   <description>The maven main core project description</description>
