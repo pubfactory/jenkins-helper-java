@@ -8,19 +8,19 @@ Configure Jenkins
 
 To use the Jenkins helper first configure you Jenkins instance to use the JUnit Attachments Plugin
 
- * go to [jenkins]/pluginManager/ where jenkins is your jenkins instance
- * Click on under the “Available” tab select “JUnit Attachments Plugin”
- * click “Download now and install after restart”
+ * go to ```[jenkins]/pluginManager/``` where ```jenkins``` is your ```jenkins``` url
+ * Click on under the ```Available``` tab select ```JUnit Attachments Plugin```
+ * click ```Download now and install after restart```
  * You will need to restart Jenkins.
 
 Then configure your Jenkins build to use the Plugin.
 
- * Click the "Configure" link in your project
- * Under "Post-build Actions"
- * “Add post-build action” and add  “Archive the artifacts” if you have not already
- * next to “Files to archive” put “target/test-attachments/**”
- * Again if you have not already added “Publish JUnit test result report” add it with “Add post-build action”
- * Select the “Publish test attachments” check-box.
+ * Click the ```Configure``` link in your project
+ * Under ```Post-build Actions```
+ * “Add post-build action” and add  ```Archive the artifacts``` if you have not already
+ * next to ```Files to archive``` put ```target/test-attachments/**```
+ * Again if you have not already added ```Publish JUnit test result report``` add it with ```Add post-build action```
+ * Select the ```Publish test attachments``` check-box.
 
 Configure Maven
 ---------------
@@ -32,7 +32,7 @@ TODO
 Configuring your tests
 ----------------------
 
-You will need to include RecordAttachmentRule as a rule in your junit test
+You will need to include ```RecordAttachmentRule``` as a rule in your junit test
 
 ```java
     @Rule
