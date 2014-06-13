@@ -5,9 +5,9 @@
   <packaging>jar</packaging>
   <version>1.0.1-SNAPSHOT</version>
 
-  <name>Maven core</name>
-  <description>The maven main core project description</description>
-  <url>http://maven.apache.org</url>
+  <name>jenkins helper</name>
+  <description>This project interfaces with JUnit Attachments Plugin to record and display files easily in Jenkins</description>
+  <url>https://github.com/safarijv/jenkins-helper-java</url>
 
   <licenses>
     <license>
@@ -55,16 +55,4 @@
       <url>http://repo.jenkins-ci.org/public/</url>
     </repository>
   </repositories> -->
-
-  <distributionManagement>
-    <repository>
-      <id>ifactory-releases</id>
-      <url>http://nexus.pubfactory.com/nexus/content/repositories/releases</url>
-    </repository>
-    <snapshotRepository>
-      <id>ifactory-snapshots</id>
-      <url>http://nexus.pubfactory.com/nexus/content/repositories/snapshots</url>
-    </snapshotRepository>
-  </distributionManagement>
-
 </project>
