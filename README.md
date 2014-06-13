@@ -51,5 +51,3 @@ Then annotate public fields or methods you would like recorded on test failure
 ```
 
 The interface is simple, artifacts will only be recorded on test failure, and nothing will be recorded if they are null.
-
-Checkout the source.
