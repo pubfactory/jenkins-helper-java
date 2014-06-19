@@ -27,7 +27,14 @@ Configure Maven
 
 Include jenkins-helper-java in your pom as a test dependency
 
-TODO
+```xml
+<dependency>
+    <groupId>com.safaribooks</groupId>
+    <artifactId>jenkins-helper-java</artifactId>
+    <version>1.0.0</version>
+    <scope>test</scope>
+</dependency>
+```
 
 Configuring your tests
 ----------------------
