@@ -3,6 +3,8 @@ jenkins-helper-java
 
 This project interfaces with [JUnit Attachments Plugin](https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Attachments+Plugin) to record and display files easily in [Jenkins](jenkins-ci.org). 
 
+For more information read our [blog post](http://blog.safaribooksonline.com/2014/06/19/jenkins-pictures-stuff/)
+
 Configure Jenkins
 -----------------
 
