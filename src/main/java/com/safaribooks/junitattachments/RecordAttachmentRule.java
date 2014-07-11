@@ -31,11 +31,6 @@ public class RecordAttachmentRule extends TestWatcher {
 	}
 
 	@Override
-	protected void starting(final Description description) {
-		description.getTestClass().getMethods();
-	}
-
-	@Override
 	protected void failed(final Throwable e, final Description description) {
 
 		Map<String, byte[]> fileOut = new HashMap<String, byte[]>();
