@@ -7,17 +7,19 @@ import org.apache.commons.io.FileUtils;
 
 public class RecordAttachment {
 
-	public static void record(File path,byte[] value){
-		try {
-			FileUtils.writeByteArrayToFile(path, value);
+    public static void record(File path, byte[] value) {
+        try {
+            FileUtils.writeByteArrayToFile(path, value);
 
-			System.out.println();
-			// according to https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Attachments+Plugin
-			System.out.println("[[ATTACHMENT|" + path + "]]"); 
-			System.out.println();
-			
-		} catch (IOException e1) {
-			System.out.println("unable to write'" + path + "':" + e1);
-		}
-	}
+            System.out.println();
+            // according to
+            // https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Attachments+Plugin
+            // format must be [[ATTACHMENT|/absolute/path/to/some/file]]
+            System.out.println("[[ATTACHMENT|" + path.getAbsolutePath() + "]]");
+            System.out.println();
+
+        } catch (IOException e1) {
+            System.out.println("unable to write'" + path + "':" + e1);
+        }
+    }
 }
