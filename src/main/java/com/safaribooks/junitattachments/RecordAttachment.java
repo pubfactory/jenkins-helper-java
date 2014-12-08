@@ -13,7 +13,8 @@ public class RecordAttachment {
 
 			System.out.println();
 			// according to https://wiki.jenkins-ci.org/display/JENKINS/JUnit+Attachments+Plugin
-			System.out.println("[[ATTACHMENT|" + path + "]]"); 
+			// format must be [[ATTACHMENT|/absolute/path/to/some/file]]
+			System.out.println("[[ATTACHMENT|" + path.getAbsolutePath() + "]]"); 
 			System.out.println();
 			
 		} catch (IOException e1) {
